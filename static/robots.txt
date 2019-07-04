@@ -2,4 +2,4 @@ User-agent: *
 Disallow: */tags/
 Disallow: */categories/
 
-sitemap: https://marcomelilli.github.io/gatsby-airtable-advanced-starter/sitemap.xml
+sitemap: https://gatsby-airtable-advanced-starter.marcomelilli.com/sitemap.xml

@@ -22,7 +22,7 @@ class Footer extends Component {
           </Link>
           <h4>
             Based on{" "}
-            <a href="https://github.com/marcomelilli/gatsby-airtable-advanced-starter">
+            <a href="https://gatsby-airtable-advanced-starter.marcomelilli.com">
               Gatsby Airtable Advanced Starter
             </a>.
           </h4>

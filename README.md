@@ -16,9 +16,12 @@ NOTE: This project is based on [Gatsby Advanced Starter](https://github.com/Vagr
 
 ## Demo
 
-[TODO: airtable demo table]
+You can find a live demo here: [website](https://gatsby-airtable-advanced-starter.marcomelilli.com)
 
-[Demo website.](https://marcomelilli.github.io/gatsby-airtable-advanced-starter/)
+This is the airtable base used to generate posts:
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrPAHW7PNHlJeTcu?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
 
 ## Features
 
@@ -86,7 +89,7 @@ module.exports = {
   siteTitleShort: "Gatsby Airtable", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Starter Blog with Gatsby and Airtable", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://marcomelilli.github.io", // Domain of your website without pathPrefix.
+  siteUrl: "https://gatsby-airtable-advanced-starter.marcomelilli.com", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-airtable-advanced-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-airtable-advanced-starter/ 
   siteDescription: "A GatsbyJS stater blog with Airtable.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
@@ -100,7 +103,7 @@ module.exports = {
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/marcomelilli/gatsby-airtable-advanced-starter",
+      url: "https://gatsby-airtable-advanced-starter.marcomelilli.com",
       iconClassName: "fa fa-github"
     },
     {
