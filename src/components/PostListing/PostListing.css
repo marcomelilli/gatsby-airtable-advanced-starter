@@ -1,0 +1,16 @@
+.post-box {
+    margin: 20px 0px;
+}
+
+    .post-box .sub-excerpt {
+        font-size: 13px;
+    }
+
+    .post-box .author {
+        text-transform: uppercase;
+        margin: 0px 10px;
+    }
+
+    .post-box h1 {
+        margin: 0;
+    }

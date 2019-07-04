@@ -1,0 +1,7 @@
+
+.post-tag-container button{
+    border-radius: 20px;
+    background: #e7e9ee;
+    margin: 10px 5px;
+    cursor: pointer
+}
