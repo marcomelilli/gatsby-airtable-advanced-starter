@@ -16,11 +16,12 @@ NOTE: This project is based on [Gatsby Advanced Starter](https://github.com/Vagr
 
 ## Demo
 
-You can find a live demo here: [website](https://gatsby-airtable-advanced-starter.marcomelilli.com)
+You can find a here a [live demo](https://gatsby-airtable-advanced-starter.marcomelilli.com) of the site.
 
 This is the airtable base used to generate posts:
 
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrPAHW7PNHlJeTcu?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+![airtable screenshot](https://github.com/marcomelilli/gatsby-airtable-advanced-starter/blob/master/static/airtable-demo.png)
+CLick [here](https://airtable.com/shrPAHW7PNHlJeTcu/tblwz1XshdQGQlPuf?blocks=hide) to navigate the view
 
 
 ## Features
