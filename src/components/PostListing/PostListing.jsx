@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
 import "./PostListing.css";
+import moment from 'moment';
 
 class PostListing extends React.Component {
   getPostList() {
     const postList = [];
+    const dateFormat = this.props.dateFormat
     this.props.postEdges.forEach(postEdge => {
       postList.push({
         path: postEdge.node.data.slug,
@@ -12,7 +14,7 @@ class PostListing extends React.Component {
         category: postEdge.node.data.category,
         image: postEdge.node.data.image ? postEdge.node.data.image[0] : null,
         title: postEdge.node.data.title,
-        date: postEdge.node.data.date,
+        date: moment(postEdge.node.data.date).format(dateFormat),
         author: postEdge.node.data.author ? postEdge.node.data.author[0].data.name : null,
         postMarkdown: postEdge.node.data.postMarkdown
       });

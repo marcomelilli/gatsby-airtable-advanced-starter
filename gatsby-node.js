@@ -51,7 +51,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const markdownQueryResult = await graphql(
     `
-      {
+      query ($dateFormat: String) {
         allAirtable(
           filter: { table: { eq: "Blog" }, data : { status: {eq: "publish"} } }
         ) {
@@ -62,7 +62,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 category
                 tags
                 slug
-                date
+                date(formatString: $dateFormat)
                 author {
                   data { 
                     name
@@ -86,7 +86,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-    `
+    `, { dateFormat: siteConfig.dateFormat }
   );
 
   if (markdownQueryResult.errors) {
@@ -133,10 +133,10 @@ exports.createPages = async ({ graphql, actions }) => {
     const prevEdge = postsEdges[prevID];
 
     createPage({
-      dateFormat: siteConfig.dateFormat,
       path: edge.node.data.slug,
       component: postPage,
       context: {
+        dateFormat: siteConfig.dateFormat,
         slug: edge.node.data.slug,
         nexttitle: nextEdge.node.data.title,
         nextslug: nextEdge.node.data.slug,
