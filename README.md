@@ -6,59 +6,20 @@
 
 This is a blog starter skeleton for [Gatsby](https://github.com/gatsbyjs/gatsby/) v2 using [Airtable](https://airtable.com/) as source.
 
-This project aims to provide a minimal base for building advanced GatsbyJS powered blog  .
-
-It doesn't define any UI limitations in any way, and only gives you the basic components for SEO/Social Media/etc.
+This project aims to provide a minimal base for building advanced GatsbyJS powered blog, without UI limitations.
 
 NOTE: This project is based on [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter/), thanks [Vagr9K](https://github.com/Vagr9K) for the inspiration.
 
 ## Demo
-Hear a [LIVE DEMO](https://gatsby-airtable-advanced-starter.marcomelilli.com) of the site.
+🚀 Here a [LIVE DEMO](https://gatsby-airtable-advanced-starter.marcomelilli.com) of the site.
 
 These are the airtable bases used to generate posts and authors:
 
 ![airtable screenshot](https://github.com/marcomelilli/gatsby-airtable-advanced-starter/blob/master/static/airtable-blog.png)
-[Navigate the view](https://airtable.com/shrPAHW7PNHlJeTcu/tblwz1XshdQGQlPuf?blocks=hide)
+👉 [Navigate the view](https://airtable.com/shrPAHW7PNHlJeTcu/tblwz1XshdQGQlPuf?blocks=hide)
 
 ![airtable screenshot](https://github.com/marcomelilli/gatsby-airtable-advanced-starter/blob/master/static/airtable-authors.png)
-[Navigate the view](https://airtable.com/shrKtgDuvqdcmGKhu/tblKQUYHrJBdh05vl?blocks=hide)
-
-
-## Features
-
-- Gatsby v2 support
-- Posts in Markdown
-  - Code syntax highlighting
-  - Embed YouTube videos
-  - Embed Tweets
-- Tags
-  - Separate page for posts under each tag
-- Categories
-  - Separate page for posts under each category
-- Disqus support
-- Google Analytics support
-- Social features
-  - Twitter tweet button
-  - Facebook share/share count
-  - Reddit share/share count
-  - Google+ share button
-  - LinkedIn share button
-  - Telegram share button
-- SEO
-  - Sitemap generation
-  - robots.txt
-  - ...
-- RSS feeds
-- Offline support
-- Web App Manifest support
-- `/static/` and content folders are available to use with `gatsby-image` out of the box
-- Netlify deploy configuration
-- Development tools
-  - ESLint for linting
-  - Prettier for code style
-  - gh-pages for deploying to GitHub pages
-  - CodeClimate configuration file and badge
-- And More!
+👉 [Navigate the view](https://airtable.com/shrKtgDuvqdcmGKhu/tblKQUYHrJBdh05vl?blocks=hide)
 
 ## Getting Started
 
@@ -103,5 +64,33 @@ module.exports = {
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };
 ```
+
+## Features
+
+- Gatsby v2 support
+- Posts in Markdown
+  - Code syntax highlighting
+  - Embed YouTube videos
+  - Embed Tweets
+- Tags
+  - Separate page for posts under each tag
+- Categories
+  - Separate page for posts under each category
+- Disqus support
+- Google Analytics support
+- Social features
+  - Twitter tweet button
+  - Facebook, Reddit, LinkedIn, Telegram share/share count
+- SEO
+  - Sitemap generation
+  - robots.txt
+  - ...
+- RSS feeds
+- Offline support
+- Web App Manifest support
+- `/static/` and content folders are available to use with `gatsby-image` out of the box
+- Netlify deploy configuration
+- And More!
+
 
 WARNING: Make sure to edit `static/robots.txt` to include your domain for the sitemap!
