@@ -18,6 +18,7 @@ export default class PostTemplate extends React.Component {
     const postNode = data.airtable;
     const post = postNode.data;
     var imageUrl = post.image ? post.image[0].url : "";
+    var author = post.author ? post.author[0].data : "";
     if (!post.id) {
       post.id = slug;
     }
@@ -32,7 +33,8 @@ export default class PostTemplate extends React.Component {
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
           <div>
-            <h1>{post.title}</h1>
+            <h1 className="title">{post.title}</h1>
+            <div className="date">📅 {post.date}</div>
             <div 
             style={{
               backgroundImage: 'url(' + imageUrl + ')',
@@ -43,12 +45,11 @@ export default class PostTemplate extends React.Component {
               }}>
             </div>
             <div dangerouslySetInnerHTML={{ __html: post.postMarkdown.childMarkdownRemark.html }} />
-            <div>📅 {post.date}</div>
+            {author && <UserInfo author={author} />}
             <div className="post-meta">
               <PostTags tags={post.tags} />
               <SocialLinks postPath={slug} postNode={postNode} />
             </div>
-            <UserInfo config={config} />
             <Disqus postNode={postNode} />
           </div>
         </div>
@@ -67,7 +68,14 @@ export const pageQuery = graphql`
         tags
         slug
         date(formatString: $dateFormat)
-        author
+        author {
+          data { 
+            name
+            email
+            twitter
+            github
+          }
+        }
         postMarkdown {
           childMarkdownRemark {
             html

@@ -10,12 +10,14 @@ class SEO extends Component {
     let description;
     let image;
     let postURL;
+    let author;
     if (postSEO) {
       const postMeta = postNode.data;
       ({ title } = postMeta);
       description = postMeta.postMarkdown.childMarkdownRemark.excerpt //split(/\s+/).slice(0,35).join(" ") + '...';
       image = postMeta.image ? postMeta.image[0].url : "";
       postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
+      author = postMeta.author[0].data;
     } else {
       title = config.siteTitle;
       description = config.siteDescription;
@@ -68,6 +70,7 @@ class SEO extends Component {
     return (
       <Helmet>
         {/* General tags */}
+        <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="image" content={image} />
 
@@ -91,7 +94,7 @@ class SEO extends Component {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:creator"
-          content={config.userTwitter ? config.userTwitter : ""}
+          content={author && author.twitter ? author.twitter : ""}
         />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />

@@ -39,7 +39,14 @@ export const pageQuery = graphql`
             tags
             slug
             date(formatString: $dateFormat)
-            author
+            author {
+              data { 
+                name
+                email
+                twitter
+                github
+              }
+            }
             postMarkdown {
               childMarkdownRemark {
                 html

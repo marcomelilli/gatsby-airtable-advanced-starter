@@ -13,7 +13,7 @@ class PostListing extends React.Component {
         image: postEdge.node.data.image ? postEdge.node.data.image[0] : null,
         title: postEdge.node.data.title,
         date: postEdge.node.data.date,
-        author: postEdge.node.data.author,
+        author: postEdge.node.data.author ? postEdge.node.data.author[0].data.name : null,
         postMarkdown: postEdge.node.data.postMarkdown
       });
     });

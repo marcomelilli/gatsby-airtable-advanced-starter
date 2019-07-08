@@ -3,3 +3,12 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.title {
+    margin-bottom: 5px;
+}
+
+.date {
+    margin-bottom: 10px;
+    text-align: right;
+}

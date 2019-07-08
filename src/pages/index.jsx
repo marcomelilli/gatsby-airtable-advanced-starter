@@ -39,7 +39,14 @@ export const pageQuery = graphql`
             title
             tags
             category
-            author
+            author {
+              data { 
+                name
+                email
+                twitter
+                github
+              }
+            }
             postMarkdown {
               childMarkdownRemark {
                 html

@@ -38,8 +38,13 @@ module.exports = {
           {
             baseId: process.env.AIRTABLE_BASE, // specify via env
             tableName: process.env.AIRTABLE_TABLE_NAME, // specify via env
-            queryName: `locations`, // optional
+            queryName: `posts`, // optional
+            tableLinks: [`author`],
             mapping: { postMarkdown: `text/markdown` },
+          },
+          {
+            baseId:  process.env.AIRTABLE_BASE,
+            tableName: process.env.AIRTABLE_TABLE_NAME_LINKED
           }
         ]
       }
@@ -142,7 +147,7 @@ module.exports = {
                 guid: rssMetadata.site_url + "/" + edge.node.data.slug,
                 custom_elements: [
                   { "content:encoded": edge.node.data.postMarkdown.childMarkdownRemark.html },
-                  { author: edge.node.data.author },
+                  { author: edge.node.data.author ? edge.node.data.author[0].data.name : null},
                   { category: edge.node.data.category}
                 ]
               }));
@@ -162,7 +167,14 @@ module.exports = {
                       title
                       category
                       tags
-                      author
+                      author {
+                        data { 
+                          name,
+                          email,
+                          twitter,
+                          github
+                        }
+                      }
                       postMarkdown {
                         childMarkdownRemark {
                           html

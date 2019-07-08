@@ -52,7 +52,9 @@ exports.createPages = async ({ graphql, actions }) => {
   const markdownQueryResult = await graphql(
     `
       {
-        allAirtable {
+        allAirtable(
+          filter: { table: { eq: "Blog" }, data : { status: {eq: "publish"} } }
+        ) {
           edges {
             node {
               data {
@@ -61,7 +63,14 @@ exports.createPages = async ({ graphql, actions }) => {
                 tags
                 slug
                 date
-                author
+                author {
+                  data { 
+                    name
+                    email
+                    twitter
+                    github
+                  }
+                }
                 postMarkdown {
                   childMarkdownRemark {
                     html

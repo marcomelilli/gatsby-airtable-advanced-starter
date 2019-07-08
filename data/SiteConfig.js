@@ -12,26 +12,7 @@ const config = {
   disqusShortname: "gatsby-airtable-advanced-starter", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFormat: "DD/MM/YYYY", // Date format for display.
-  userTwitter: "melilli_marco", // Optionally renders "Follow Me" in the UserInfo segment. 
-  // Links to social profiles/projects you want to display in the author segment/navigation bar.
-  userLinks: [
-    {
-      label: "GitHub",
-      url: "https://github.com/marcomelilli/gatsby-airtable-advanced-starter",
-      iconClassName: "fa fa-github"
-    },
-    {
-      label: "Twitter",
-      url: "https://twitter.com/melilli_marco",
-      iconClassName: "fa fa-twitter"
-    },
-    {
-      label: "Email",
-      url: "mailto:marcomelilli92@gmail.com",
-      iconClassName: "fa fa-envelope"
-    }
-  ],
-  copyright: "Copyright © 2019. Advanced User", // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2019", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };
