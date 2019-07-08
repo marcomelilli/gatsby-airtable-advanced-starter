@@ -1,8 +1,6 @@
 <div align="center">
-    <img src="static/logos/logo-1024.png" alt="Logo" width='200px' height='200px'/>
+    <img src="static/logos/gatsby-airtable-advanced-starter-logo.png" alt="Logo" width='70%' height='auto'/>
 </div>
-
-## THIS PROJECT IS A WORK IN PROGRESS
 
 # Gatsby Airtable Advanced Starter
 
@@ -12,22 +10,23 @@ This project aims to provide a minimal base for building advanced GatsbyJS power
 
 It doesn't define any UI limitations in any way, and only gives you the basic components for SEO/Social Media/etc.
 
-NOTE: This project is based on [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter/), thanks Vagr9K for the inspiration.
+NOTE: This project is based on [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter/), thanks [Vagr9K](https://github.com/Vagr9K) for the inspiration.
 
 ## Demo
+Hear a [LIVE DEMO](https://gatsby-airtable-advanced-starter.marcomelilli.com) of the site.
 
-You can find a here a [live demo](https://gatsby-airtable-advanced-starter.marcomelilli.com) of the site.
+These are the airtable bases used to generate posts and authors:
 
-This is the airtable base used to generate posts:
+![airtable screenshot](https://github.com/marcomelilli/gatsby-airtable-advanced-starter/blob/master/static/airtable-blog.png)
+[Navigate the view](https://airtable.com/shrPAHW7PNHlJeTcu/tblwz1XshdQGQlPuf?blocks=hide)
 
-![airtable screenshot](https://github.com/marcomelilli/gatsby-airtable-advanced-starter/blob/master/static/airtable-demo.png)
-CLick [here](https://airtable.com/shrPAHW7PNHlJeTcu/tblwz1XshdQGQlPuf?blocks=hide) to navigate the view
+![airtable screenshot](https://github.com/marcomelilli/gatsby-airtable-advanced-starter/blob/master/static/airtable-authors.png)
+[Navigate the view](https://airtable.com/shrKtgDuvqdcmGKhu/tblKQUYHrJBdh05vl?blocks=hide)
 
 
 ## Features
 
 - Gatsby v2 support
-- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
 - Posts in Markdown
   - Code syntax highlighting
   - Embed YouTube videos
@@ -37,7 +36,6 @@ CLick [here](https://airtable.com/shrPAHW7PNHlJeTcu/tblwz1XshdQGQlPuf?blocks=hid
 - Categories
   - Separate page for posts under each category
 - Disqus support
-  - Notifications about new disqus comments
 - Google Analytics support
 - Social features
   - Twitter tweet button
@@ -100,7 +98,7 @@ module.exports = {
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFormat: "DD/MM/YYYY", // Date format for display.
   ],
-  copyright: "Copyright © 2019. Advanced User", // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2019", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };
