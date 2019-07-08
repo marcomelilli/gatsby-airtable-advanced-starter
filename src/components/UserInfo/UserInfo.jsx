@@ -7,7 +7,7 @@ class UserInfo extends Component {
     const { author } = this.props;
     const { expanded } = this.props;
     let authorGithub = author.github ? 'https://github.com/' + author.github : null
-    let authorEmail = author.email ? "mailto:{author.email}" : null
+    let authorEmail = author.email ? ("mailto:"+author.email) : null
     return (
       <div className="author-container">
         {author.name && <span> 🙍‍♂ {author.name} </span>}
