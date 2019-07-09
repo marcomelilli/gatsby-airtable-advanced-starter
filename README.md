@@ -38,6 +38,7 @@ create files `.env.development` and `.env.production` to set Airtable config:
 AIRTABLE_API_KEY=XXXXXXXXXXX
 AIRTABLE_BASE=XXXXXXXXXXXX
 AIRTABLE_TABLE_NAME=Blog
+AIRTABLE_TABLE_NAME_LINKED=Authors
 ```
 NOTE: remember to not commit these files in your repository for security reason.
 
