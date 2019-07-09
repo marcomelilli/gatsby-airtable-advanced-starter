@@ -22,7 +22,7 @@ export default class TagTemplate extends React.Component {
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query TagPage($tag: String, $dateFormat: String) {
+  query TagPage($tag: String) {
     allAirtable(
       limit: 1000
       sort: { fields: [data___date], order: DESC }
@@ -33,7 +33,7 @@ export const pageQuery = graphql`
         node {
           data {
             title
-            date(formatString: $dateFormat)
+            date
             category
             tags
             slug
