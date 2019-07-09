@@ -16,10 +16,10 @@ NOTE: This project is based on [Gatsby Advanced Starter](https://github.com/Vagr
 These are the airtable bases used to generate posts and authors:
 
 ![airtable screenshot](https://github.com/marcomelilli/gatsby-airtable-advanced-starter/blob/master/static/airtable-blog.png)
-👉 [Navigate the view](https://airtable.com/shrPAHW7PNHlJeTcu/tblwz1XshdQGQlPuf?blocks=hide)
+👉 [Navigate the view](https://airtable.com/shrPAHW7PNHlJeTcu/tblwz1XshdQGQlPuf?blocks=hide) Blog
 
 ![airtable screenshot](https://github.com/marcomelilli/gatsby-airtable-advanced-starter/blob/master/static/airtable-authors.png)
-👉 [Navigate the view](https://airtable.com/shrKtgDuvqdcmGKhu/tblKQUYHrJBdh05vl?blocks=hide)
+👉 [Navigate the view](https://airtable.com/shrKtgDuvqdcmGKhu/tblKQUYHrJBdh05vl?blocks=hide) Authors
 
 ## Getting Started
 
@@ -38,6 +38,7 @@ create files `.env.development` and `.env.production` to set Airtable config:
 AIRTABLE_API_KEY=XXXXXXXXXXX
 AIRTABLE_BASE=XXXXXXXXXXXX
 AIRTABLE_TABLE_NAME=Blog
+AIRTABLE_TABLE_NAME_LINKED=Authors
 ```
 NOTE: remember to not commit these files in your repository for security reason.
 
