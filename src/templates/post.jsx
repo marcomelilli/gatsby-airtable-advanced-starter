@@ -51,6 +51,8 @@ export default class PostTemplate extends React.Component {
               <SocialLinks postPath={slug} postNode={postNode} />
             </div>
             <Disqus postNode={postNode} />
+            <div id="commento" style="margin-top: 20px;"></div>
+            <script src="https://cdn.commento.io/js/commento.js"></script>
           </div>
         </div>
       </Layout>
