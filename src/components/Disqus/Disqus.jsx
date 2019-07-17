@@ -39,7 +39,6 @@ class Disqus extends Component {
         identifier={post.slug}
         title={post.title}
         url={url}
-        category_id={post.category}
         onNewComment={this.notifyAboutComment}
       />
     );
