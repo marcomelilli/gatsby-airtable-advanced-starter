@@ -95,3 +95,13 @@ module.exports = {
 
 
 WARNING: Make sure to edit `static/robots.txt` to include your domain for the sitemap!
+
+
+# Contributing
+If you want to contribute to this starter, consider:
+
+- Creating new features and pull requests
+- Improve UI 
+- Improve the documentation
+
+All contributions are welcome!
