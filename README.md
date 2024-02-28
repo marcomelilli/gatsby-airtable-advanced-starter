@@ -11,7 +11,6 @@ This project aims to provide a minimal base for building advanced GatsbyJS power
 NOTE: This project is based on [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter/), thanks [Vagr9K](https://github.com/Vagr9K) for the inspiration.
 
 ## Demo
-🚀 Here a [LIVE DEMO](https://gatsby-airtable-advanced-starter.marcomelilli.com) of the site.
 
 These are the airtable bases used to generate posts and authors:
 
